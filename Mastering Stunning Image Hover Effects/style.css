@@ -1,0 +1,57 @@
+* {
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#555;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+    position:relative;
+    width:800px;
+    height:300px;
+    background: #222;
+    transition: all 0.5s;
+    
+}
+
+.container:hover .clip{
+         clip-path: polygon(100% 0, 100% 0%, 100% 100% , 100% 100%);
+}
+
+.clip{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: all .5s ;
+     
+}
+.container .clip:hover{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0%  100%);
+}
+
+.clip1{
+    background: url("https://t3.ftcdn.net/jpg/02/13/04/12/360_F_213041275_tiij0kmvj0CuZzdC6iwiTvcJqG353cQm.webp");
+    background-size: cover;
+    background-position:center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0  100%);
+}
+.clip2{
+    background: url("https://t4.ftcdn.net/jpg/00/17/80/95/240_F_17809546_Csqtvhr4BGXkEZ1HpnLyeZd0dqFO5Uy8.jpg");
+    background-size: cover;
+    background-position:center;
+ clip-path: polygon(19%  0, 87% 0, 64% 100%, 33%  100%);
+}
+.clip3{
+    background: url("https://t4.ftcdn.net/jpg/03/78/84/81/240_F_378848181_NKLy8kZA5fVJhcXiFJR491Qw1wgGp413.jpg");
+    background-size: cover;
+    background-position:center;
+   clip-path: polygon(82% 0, 100% 0%, 100% 100%, 63% 100%);
+}
+
