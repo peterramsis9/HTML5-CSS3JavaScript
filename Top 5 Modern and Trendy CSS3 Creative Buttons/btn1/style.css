@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    a{
+        text-decoration: none;
+        color:#fff;
+        border: 2px solid #fff;
+        padding: 10px 45px;
+        position: relative;
+        overflow:hidden;
+        transition: all ease-in-out 1s; 
+       
+        &::before{
+              transition: all ease-in-out 1s; 
+            content: "Know";
+            position: absolute;
+            top:0;
+            left:0;
+            background-color: #fff;
+            color:#333;
+            padding: 10px 42px;
+            transform: translateX(-100%)
+        }
+    }
+}
+
+.wrapper a:hover:before{
+
+   transform: translateX(0)    
+
+}
